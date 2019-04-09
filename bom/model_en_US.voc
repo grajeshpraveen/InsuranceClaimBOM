@@ -1,0 +1,22 @@
+# Vocabulary Properties
+uuid = 438ee47d-c130-4269-933c-3a0293ffe54f
+
+# com.insurance.Insurance_Claim
+com.insurance.Insurance_Claim#concept.label = insurance claim
+com.insurance.Insurance_Claim.age#phrase.action = set the age of {this} to {age}
+com.insurance.Insurance_Claim.age#phrase.navigation = {age} of {this}
+com.insurance.Insurance_Claim.name#phrase.action = set the name of {this} to {name}
+com.insurance.Insurance_Claim.name#phrase.navigation = {name} of {this}
+com.insurance.Insurance_Claim.newInsurancePolicy()#phrase.navigation = {this} is new insurance policy
+com.insurance.Insurance_Claim.paidMonths#phrase.action = set the paid months of {this} to {paid months}
+com.insurance.Insurance_Claim.paidMonths#phrase.navigation = {paid months} of {this}
+com.insurance.Insurance_Claim.priorityCheck()#phrase.navigation = {this}.priorityCheck()
+com.insurance.Insurance_Claim.type#phrase.action = set the types of {this} to {type}
+com.insurance.Insurance_Claim.type#phrase.navigation = {type} of {this}
+
+# com.insurance.Insurance_NewPolicy
+com.insurance.Insurance_NewPolicy#concept.label = insurance new policy
+com.insurance.Insurance_NewPolicy.applyNewPolicy(java.lang.String,java.util.List,double,double)#phrase.navigation = {this}.applyNewPolicy({0}, {1}, {2}, {3})
+
+# com.insurance.MongoConnection
+com.insurance.MongoConnection#concept.label = mongo connection

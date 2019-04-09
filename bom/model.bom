@@ -1,0 +1,34 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/Insurance//InsuranceClaim"
+property uuid "5541fb00-85a7-4331-b245-4bf3dd8fe06a"
+package com.insurance;
+
+
+public class Insurance_Claim
+{
+    public double age;
+    public string name;
+    public double paidMonths;
+    public java.util.List type domain 0,* class string;
+    public Insurance_Claim();
+    public boolean newInsurancePolicy();
+    public string priorityCheck();
+}
+
+public class Insurance_NewPolicy
+{
+    public Insurance_NewPolicy();
+    public boolean applyNewPolicy(string arg1, 
+        java.util.List arg2 domain 0,* class string, 
+        double arg3, 
+        double arg4);
+}
+
+public class MongoConnection
+{
+    public MongoConnection();
+    public com.mongodb.MongoClient mongo()
+                throws java.lang.Exception;
+}
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="Insurance_apply" usingExtractor="true" targetRuleProjectName="Insurance">
+  <name>Insurance_apply</name>
+  <uuid>3fc3da99-a41b-4ac0-8e8c-1352031f6819</uuid>
+  <referencedVariables variableName="insurance" variableSetName="Variables" direction="IN_OUT">
+    <variableSet href="../rules/Variables.var#289b8a02-1135-4fee-8986-c7dda6a04768"/>
+  </referencedVariables>
+  <referencedVariables variableName="new_policy_approved" variableSetName="Variables" direction="OUT">
+    <variableSet href="../rules/Variables.var#289b8a02-1135-4fee-8986-c7dda6a04768"/>
+  </referencedVariables>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="Insurance_apply_extractor" validator="None"/>
+  <targetRuleProject href="../../Insurance#19d3fb90-a119-4b95-b5b3-7320c49816ec"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

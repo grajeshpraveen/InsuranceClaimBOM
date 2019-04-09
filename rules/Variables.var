@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Variables</name>
+  <uuid>289b8a02-1135-4fee-8986-c7dda6a04768</uuid>
+  <variables name="status" type="java.lang.String" initialValue="" verbalization="status"/>
+  <variables name="insurance" type="com.insurance.Insurance_Claim" initialValue="" verbalization="insurance"/>
+  <variables name="new_policy_approved" type="java.lang.String" initialValue="" verbalization="new_policy_approved"/>
+</ilog.rules.studio.model.base:VariableSet>
