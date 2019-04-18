@@ -1,5 +1,5 @@
 variables {
-  java.lang.String status;
-  com.insurance.Insurance_Claim insurance;
   java.lang.String new_policy_approved;
+  com.insurance.New_Policy new_Policy;
+  int claimAmount;
 }

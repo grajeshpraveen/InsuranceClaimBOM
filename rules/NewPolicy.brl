@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>NewPolicy</name>
+  <uuid>8062fc57-fb75-49f5-bbdf-1ad95a98af5b</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    new_Policy   is insert policy  is true 
+then
+    set new_policy_approved to "Approved" ;
+else
+    set new_policy_approved to "rejected" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

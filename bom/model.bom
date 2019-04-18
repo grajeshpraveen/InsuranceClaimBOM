@@ -1,28 +1,18 @@
 
 property loadGetterSetterAsProperties "true"
 property origin "xom:/Insurance//InsuranceClaim"
-property uuid "5541fb00-85a7-4331-b245-4bf3dd8fe06a"
+property uuid "3495ec51-2615-42b7-9eb7-afdbae6cde97"
 package com.insurance;
 
 
-public class Insurance_Claim
+public class Insurance_Check
 {
-    public double age;
-    public string name;
-    public double paidMonths;
-    public java.util.List type domain 0,* class string;
-    public Insurance_Claim();
-    public boolean newInsurancePolicy();
-    public string priorityCheck();
-}
-
-public class Insurance_NewPolicy
-{
-    public Insurance_NewPolicy();
-    public boolean applyNewPolicy(string arg1, 
-        java.util.List arg2 domain 0,* class string, 
-        double arg3, 
-        double arg4);
+    public Insurance_Check();
+    public int amountCalculation(string arg1, string arg2);
+    public string checkPolicy(string arg1, int arg2, int arg3);
+    public int claimPolicy(string arg);
+    public boolean newPolicy(string arg1, string arg2, int arg3, string arg4, string arg5, int arg6, string arg7, string arg8);
+    public string renewalPolicy(string arg);
 }
 
 public class MongoConnection
@@ -30,5 +20,24 @@ public class MongoConnection
     public MongoConnection();
     public com.mongodb.MongoClient mongo()
                 throws java.lang.Exception;
+}
+
+public class New_Policy
+{
+    public int age;
+    public long amount;
+    public string name;
+    public int noOfMonths;
+    public string nominee;
+    public string policyId;
+    public string policyType;
+    public string priority;
+    public string status;
+    public string type;
+    public New_Policy(string arg1, string arg2, int arg3, string arg4, string arg5, int arg6);
+    public New_Policy();
+    public int claimPolicy();
+    public boolean insertPolicy();
+    public string renewalPolicy();
 }
 

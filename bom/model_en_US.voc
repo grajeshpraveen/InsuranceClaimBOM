@@ -1,22 +1,39 @@
 # Vocabulary Properties
-uuid = 438ee47d-c130-4269-933c-3a0293ffe54f
+uuid = 4bc167ea-fc07-42b0-ad39-08f2941b8b2b
 
-# com.insurance.Insurance_Claim
-com.insurance.Insurance_Claim#concept.label = insurance claim
-com.insurance.Insurance_Claim.age#phrase.action = set the age of {this} to {age}
-com.insurance.Insurance_Claim.age#phrase.navigation = {age} of {this}
-com.insurance.Insurance_Claim.name#phrase.action = set the name of {this} to {name}
-com.insurance.Insurance_Claim.name#phrase.navigation = {name} of {this}
-com.insurance.Insurance_Claim.newInsurancePolicy()#phrase.navigation = {this} is new insurance policy
-com.insurance.Insurance_Claim.paidMonths#phrase.action = set the paid months of {this} to {paid months}
-com.insurance.Insurance_Claim.paidMonths#phrase.navigation = {paid months} of {this}
-com.insurance.Insurance_Claim.priorityCheck()#phrase.navigation = {this}.priorityCheck()
-com.insurance.Insurance_Claim.type#phrase.action = set the types of {this} to {type}
-com.insurance.Insurance_Claim.type#phrase.navigation = {type} of {this}
-
-# com.insurance.Insurance_NewPolicy
-com.insurance.Insurance_NewPolicy#concept.label = insurance new policy
-com.insurance.Insurance_NewPolicy.applyNewPolicy(java.lang.String,java.util.List,double,double)#phrase.navigation = {this}.applyNewPolicy({0}, {1}, {2}, {3})
+# com.insurance.Insurance_Check
+com.insurance.Insurance_Check#concept.label = insurance check
+com.insurance.Insurance_Check.amountCalculation(java.lang.String,java.lang.String)#phrase.navigation = {this}.amountCalculation({0}, {1})
+com.insurance.Insurance_Check.checkPolicy(java.lang.String,int,int)#phrase.navigation = {this}.checkPolicy({0}, {1}, {2})
+com.insurance.Insurance_Check.claimPolicy(java.lang.String)#phrase.navigation = {this}.claimPolicy({0})
+com.insurance.Insurance_Check.newPolicy(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)#phrase.navigation = {this}.newPolicy({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7})
+com.insurance.Insurance_Check.renewalPolicy(java.lang.String)#phrase.navigation = {this}.renewalPolicy({0})
 
 # com.insurance.MongoConnection
 com.insurance.MongoConnection#concept.label = mongo connection
+
+# com.insurance.New_Policy
+com.insurance.New_Policy#concept.label = new policy
+com.insurance.New_Policy.age#phrase.action = set the age of {this} to {age}
+com.insurance.New_Policy.age#phrase.navigation = {age} of {this}
+com.insurance.New_Policy.amount#phrase.action = set the amount of {this} to {amount}
+com.insurance.New_Policy.amount#phrase.navigation = {amount} of {this}
+com.insurance.New_Policy.claimPolicy()#phrase.navigation = {this}.claimPolicy()
+com.insurance.New_Policy.insertPolicy()#phrase.navigation = {this} is insert policy
+com.insurance.New_Policy.name#phrase.action = set the name of {this} to {name}
+com.insurance.New_Policy.name#phrase.navigation = {name} of {this}
+com.insurance.New_Policy.noOfMonths#phrase.action = set the no of months of {this} to {no of months}
+com.insurance.New_Policy.noOfMonths#phrase.navigation = {no of months} of {this}
+com.insurance.New_Policy.nominee#phrase.action = set the nominee of {this} to {nominee}
+com.insurance.New_Policy.nominee#phrase.navigation = {nominee} of {this}
+com.insurance.New_Policy.policyId#phrase.action = set the policy id of {this} to {policy id}
+com.insurance.New_Policy.policyId#phrase.navigation = {policy id} of {this}
+com.insurance.New_Policy.policyType#phrase.action = set the policy type of {this} to {policy type}
+com.insurance.New_Policy.policyType#phrase.navigation = {policy type} of {this}
+com.insurance.New_Policy.priority#phrase.action = set the priority of {this} to {priority}
+com.insurance.New_Policy.priority#phrase.navigation = {priority} of {this}
+com.insurance.New_Policy.renewalPolicy()#phrase.navigation = {this}.renewalPolicy()
+com.insurance.New_Policy.status#phrase.action = set the status of {this} to {status}
+com.insurance.New_Policy.status#phrase.navigation = {status} of {this}
+com.insurance.New_Policy.type#phrase.action = set the type of {this} to {type}
+com.insurance.New_Policy.type#phrase.navigation = {type} of {this}
