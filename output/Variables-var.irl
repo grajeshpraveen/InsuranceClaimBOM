@@ -1,5 +1,0 @@
-variables {
-  java.lang.String new_policy_approved;
-  com.insurance.New_Policy new_Policy;
-  int claimAmount;
-}
